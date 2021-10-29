@@ -9,5 +9,4 @@ public interface BlogService {
     PostBlog findById(Long id);
     PostBlog save(PostBlog postBlog);
     void deletar(Long id);
-    PostBlog updatePost(Long id, PostBlog postBlog);
 }

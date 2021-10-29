@@ -1,7 +1,6 @@
 package com.blog.projeto.service.serviceImpl;
 
 
-import com.blog.projeto.exceptions.ParamentroInvalidoException;
 import com.blog.projeto.model.PostBlog;
 import com.blog.projeto.repository.BlogRepository;
 import com.blog.projeto.service.BlogService;
@@ -36,12 +35,5 @@ public class BlogServiceImpl implements BlogService {
             blogRepository.deleteById(id);
         }
 
-        @Override
-        public PostBlog updatePost(Long id, PostBlog postBlog){
-            if(id == null){
-                throw new ParamentroInvalidoException ("O id não pode ser nulo");
-            }
-            return blogRepository.save(postBlog);
-            }
-        }
+}
 

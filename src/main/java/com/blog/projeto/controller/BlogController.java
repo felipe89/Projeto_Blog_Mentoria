@@ -3,6 +3,7 @@ package com.blog.projeto.controller;
 
 import com.blog.projeto.model.PostBlog;
 import com.blog.projeto.repository.BlogRepository;
+import com.blog.projeto.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
